@@ -1,0 +1,2049 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Веб-разработчик Чумак К.В. | Создание сайтов для онлайн и офлайн бизнеса</title>
+    <meta name="description" content="Закажите разработку сайта под ключ. Портфолио, гарантия, честные цены. Адаптив, скорость, поддержка. Заявка за 2 минуты.">
+    <meta name="keywords" content="разработка сайта для бизнеса, создание интернет-магазина, сайт для офлайн компании, веб-разработчик портфолио, цена сайта под ключ, заказать сайт недорого">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0B0B0F">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Веб-разработчик Чумак К.В. | Создание сайтов для бизнеса">
+    <meta property="og:description" content="Разработка сайтов под ключ с гарантией и прозрачностью. От визитки до SaaS.">
+    <meta property="og:url" content="https://chumak.dev">
+    <meta property="og:image" content="https://chumak.dev/og-image.jpg">
+    <meta property="og:locale" content="ru_RU">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "ProfessionalService",
+                "@id": "https://chumak.dev/#service",
+                "name": "Чумак К.В. - Веб-разработчик",
+                "image": "https://chumak.dev/logo.png",
+                "description": "Разработка сайтов под ключ для онлайн и офлайн бизнеса",
+                "url": "https://chumak.dev",
+                "priceRange": "от 50 000 ₽ до 500 000 ₽",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressCountry": "RU"
+                },
+                "telephone": "+79001234567",
+                "email": "chumak@dev.ru",
+                "serviceType": ["Создание сайтов", "Разработка интернет-магазинов", "Редизайн сайтов", "Техническая поддержка"],
+                "hasOfferCatalog": {
+                    "@type": "OfferCatalog",
+                    "name": "Услуги веб-разработки",
+                    "itemListElement": [
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Сайт-визитка",
+                                "description": "Адаптивный сайт-визитка с формами и SEO"
+                            },
+                            "price": "50000",
+                            "priceCurrency": "RUB"
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Интернет-магазин",
+                                "description": "Полноценный e-commerce с интеграцией CRM"
+                            },
+                            "price": "120000",
+                            "priceCurrency": "RUB"
+                        }
+                    ]
+                },
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "5",
+                    "reviewCount": "47"
+                }
+            },
+            {
+                "@type": "Review",
+                "author": {
+                    "@type": "Person",
+                    "name": "Алексей",
+                    "jobTitle": "Владелец TechStore"
+                },
+                "datePublished": "2026-02-15",
+                "reviewBody": "Кирилл сделал отличный интернет-магазин. Всё чётко по срокам, сайт работает быстро, продажи выросли на 50% за первый месяц.",
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5"
+                },
+                "itemReviewed": {
+                    "@type": "Service",
+                    "name": "Разработка интернет-магазина"
+                }
+            },
+            {
+                "@type": "Review",
+                "author": {
+                    "@type": "Person",
+                    "name": "Мария",
+                    "jobTitle": "Директор салона красоты"
+                },
+                "datePublished": "2026-03-10",
+                "reviewBody": "Наконец-то разработчик, который не пропал! Постоянно был на связи, всё объяснял. Рекомендую для любого бизнеса.",
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5"
+                }
+            },
+            {
+                "@type": "Review",
+                "author": {
+                    "@type": "Person",
+                    "name": "Дмитрий",
+                    "jobTitle": "Основатель стартапа"
+                },
+                "datePublished": "2026-04-05",
+                "reviewBody": "Сделали MVP для стартапа за 3 недели. Быстро, качественно, без лишней воды. Продолжаем работать над масштабированием.",
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5"
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Archivo+Black&display=swap" rel="stylesheet">
+    
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+
+    <style>
+        :root {
+            --bg-main: #0B0B0F;
+            --bg-gradient: linear-gradient(135deg, #0B0B0F 0%, #1A1A2E 100%);
+            --bg-card: rgba(20, 20, 30, 0.85);
+            --bg-card-hover: rgba(25, 25, 40, 0.95);
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --text-primary: #EDEDED;
+            --text-secondary: #9CA3AF;
+            --accent-pink: #FF3B7C;
+            --accent-cyan: #3BC9FF;
+            --accent-success: #20E6B0;
+            --accent-warning: #FF6B6B;
+            --btn-gradient: linear-gradient(135deg, #FF3B7C 0%, #3BC9FF 100%);
+            --btn-hover-glow: 0 0 25px rgba(59, 201, 255, 0.4);
+            --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.4);
+            --radius-card: 16px;
+            --radius-btn: 8px;
+            --font-head: 'Archivo Black', sans-serif;
+            --font-body: 'Inter', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--bg-main);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--bg-main);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--glass-border);
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--accent-cyan);
+        }
+
+        /* Utilities */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            padding: 6rem 0;
+            position: relative;
+        }
+
+        .section-title {
+            font-family: var(--font-head);
+            font-size: clamp(2rem, 4vw, 3rem);
+            color: #FFFFFF;
+            text-align: center;
+            margin-bottom: 3rem;
+            letter-spacing: -0.02em;
+        }
+
+        .highlight {
+            color: var(--accent-cyan);
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(11, 11, 15, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .logo {
+            font-family: var(--font-head);
+            font-size: 1.4rem;
+            background: var(--btn-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        nav {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent-cyan);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .nav-cta {
+            padding: 0.5rem 1rem;
+            background: var(--bg-card);
+            border: 1px solid var(--accent-cyan);
+            color: var(--accent-cyan) !important;
+            border-radius: var(--radius-btn);
+            transition: all 0.3s;
+        }
+
+        .nav-cta:hover {
+            background: var(--accent-cyan);
+            color: #fff !important;
+        }
+
+        /* Timer Banner */
+        .timer-banner {
+            background: var(--btn-gradient);
+            padding: 0.6rem;
+            text-align: center;
+            font-weight: 600;
+            position: sticky;
+            top: 70px;
+            z-index: 999;
+            font-size: 0.9rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .timer-banner span {
+            font-family: 'Monaco', monospace;
+            font-size: 1rem;
+        }
+
+        /* Hero */
+        #hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            padding-top: 80px;
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 120%;
+            background: var(--bg-gradient);
+            z-index: 0;
+        }
+
+        #hero-canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            opacity: 0.6;
+            will-change: transform;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 900px;
+            padding: 2rem;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            padding: 0.5rem 1.5rem;
+            background: var(--bg-card);
+            border: 1px solid var(--glass-border);
+            border-radius: 50px;
+            font-size: 0.9rem;
+            color: var(--accent-cyan);
+            margin-bottom: 2rem;
+            backdrop-filter: blur(8px);
+        }
+
+        h1 {
+            font-family: var(--font-head);
+            font-size: clamp(2.5rem, 7vw, 5rem);
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            color: #FFFFFF;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 2.5rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border-radius: var(--radius-btn);
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.2rem;
+        }
+
+        .btn span {
+            font-size: 0.75rem;
+            font-weight: 400;
+            opacity: 0.8;
+        }
+
+        .btn-primary {
+            background: var(--btn-gradient);
+            border: none;
+            color: white;
+            box-shadow: 0 4px 15px rgba(255, 59, 124, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--btn-hover-glow);
+        }
+
+        .btn-secondary {
+            background: var(--bg-card);
+            border: 1px solid var(--glass-border);
+            color: var(--text-primary);
+            backdrop-filter: blur(8px);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--accent-cyan);
+            color: var(--accent-cyan);
+        }
+
+        /* Cards */
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-card);
+            padding: 2rem;
+            backdrop-filter: blur(8px);
+            box-shadow: var(--shadow-card);
+            transition: transform 0.3s, border-color 0.3s, background 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(59, 201, 255, 0.3);
+            background: var(--bg-card-hover);
+        }
+
+        /* Problems */
+        .problems-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .problem-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.8rem;
+            color: var(--accent-pink);
+        }
+
+        .problem-solution {
+            color: var(--accent-cyan);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .problem-text {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .anti-sales {
+            margin-top: 3rem;
+            border-color: rgba(255, 107, 107, 0.3);
+            background: rgba(255, 107, 107, 0.05);
+        }
+
+        .anti-sales h3 {
+            color: var(--accent-warning);
+            margin-bottom: 1rem;
+        }
+
+        .anti-sales ul {
+            list-style: none;
+        }
+
+        .anti-sales li {
+            padding: 0.4rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            color: var(--text-secondary);
+        }
+
+        .anti-sales li::before {
+            content: '❌';
+            position: absolute;
+            left: 0;
+        }
+
+        /* Services */
+        .toggles-panel {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .toggle-btn {
+            padding: 0.8rem 1.5rem;
+            background: var(--bg-card);
+            border: 1px solid var(--glass-border);
+            border-radius: 50px;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        .toggle-btn.active {
+            background: var(--btn-gradient);
+            border-color: transparent;
+            color: white;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: #FFFFFF;
+        }
+
+        .service-card ul {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-card li {
+            color: var(--text-secondary);
+            padding: 0.4rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .service-card li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--accent-success);
+        }
+
+        .service-price {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent-cyan);
+        }
+
+        .service-time {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-top: 0.3rem;
+        }
+
+        /* Calculator */
+        .calculator-container {
+            background: var(--bg-card);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-card);
+            padding: 2.5rem;
+            margin-top: 4rem;
+            backdrop-filter: blur(8px);
+        }
+
+        .calc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .calc-group label {
+            display: block;
+            margin-bottom: 0.8rem;
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+
+        .calc-group input[type="range"] {
+            width: 100%;
+            accent-color: var(--accent-cyan);
+            cursor: pointer;
+        }
+
+        .calc-group select {
+            width: 100%;
+            padding: 0.8rem;
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid var(--glass-border);
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-family: var(--font-body);
+        }
+
+        .calc-result {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--glass-border);
+            text-align: center;
+        }
+
+        .calc-price {
+            font-family: var(--font-head);
+            font-size: 2.5rem;
+            background: var(--btn-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .calc-details {
+            color: var(--text-secondary);
+            margin-top: 0.5rem;
+        }
+
+        /* Upsell */
+        .upsell-card {
+            background: linear-gradient(135deg, rgba(255, 59, 124, 0.1), rgba(59, 201, 255, 0.1));
+            border: 1px solid var(--accent-cyan);
+            margin-top: 2rem;
+            padding: 1.5rem;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.5rem;
+        }
+
+        .upsell-text h4 {
+            color: var(--accent-cyan);
+            margin-bottom: 0.3rem;
+        }
+
+        .upsell-text p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .upsell-badge {
+            background: var(--accent-success);
+            color: #000;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+
+        /* Portfolio Video */
+        .portfolio-wrapper {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16/9;
+            background: #000;
+            border-radius: var(--radius-card);
+            overflow: hidden;
+            border: 1px solid var(--glass-border);
+        }
+
+        .portfolio-video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hotspot-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .hotspot {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--accent-pink);
+            cursor: pointer;
+            pointer-events: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: pulse 2s infinite;
+            transition: transform 0.2s;
+        }
+
+        .hotspot:hover {
+            transform: scale(1.1);
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(255, 59, 124, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(255, 59, 124, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 59, 124, 0); }
+        }
+
+        .hotspot-info {
+            position: absolute;
+            background: var(--bg-card);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            width: 280px;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.3s;
+            pointer-events: none;
+            z-index: 10;
+            box-shadow: var(--shadow-card);
+        }
+
+        .hotspot-info.visible {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+
+        .hotspot-info h4 {
+            color: var(--accent-cyan);
+            margin-bottom: 0.5rem;
+        }
+
+        .hotspot-info p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .hotspot-info a {
+            color: var(--accent-pink);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* Process Stats */
+        .stats-bar {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 4rem;
+        }
+
+        .stat-item {
+            background: var(--bg-card);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: var(--shadow-card);
+        }
+
+        .stat-number {
+            font-family: var(--font-head);
+            font-size: 2.5rem;
+            color: var(--accent-cyan);
+        }
+
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .step-card {
+            cursor: pointer;
+        }
+
+        .step-number {
+            font-family: var(--font-head);
+            font-size: 3rem;
+            opacity: 0.2;
+            margin-bottom: 0.5rem;
+        }
+
+        .step-details {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .step-card.expanded .step-details {
+            max-height: 200px;
+            margin-top: 1rem;
+        }
+
+        /* Reviews */
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .review-stars {
+            color: #FFD700;
+            margin-bottom: 0.8rem;
+        }
+
+        .review-text {
+            font-style: italic;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+
+        .review-author {
+            font-weight: 600;
+            color: var(--accent-cyan);
+        }
+
+        /* FAQ */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--bg-card);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 1.2rem 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: var(--text-primary);
+            transition: background 0.2s;
+        }
+
+        .faq-question:hover {
+            background: rgba(255, 255, 255, 0.03);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            padding: 0 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        .faq-item.expanded .faq-answer {
+            max-height: 300px;
+            padding: 0 1.5rem 1.5rem;
+        }
+
+        /* Contact */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .contact-form {
+            background: var(--bg-card);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-card);
+            padding: 2.5rem;
+            box-shadow: var(--shadow-card);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid var(--glass-border);
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-family: var(--font-body);
+            font-size: 1rem;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        .form-group input:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent-cyan);
+            box-shadow: 0 0 0 2px rgba(59, 201, 255, 0.2);
+        }
+
+        .contact-links {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .contact-links li {
+            margin-bottom: 1rem;
+        }
+
+        .contact-links a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            font-weight: 500;
+        }
+
+        .contact-links a:hover {
+            color: var(--accent-pink);
+        }
+
+        .guarantees {
+            background: var(--bg-card);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .guarantees h4 {
+            color: var(--accent-success);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .guarantees ul {
+            list-style: none;
+        }
+
+        .guarantees li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            color: var(--text-secondary);
+        }
+
+        .guarantees li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--accent-success);
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(10, 10, 15, 0.9);
+            border-top: 1px solid var(--glass-border);
+            padding: 3rem 2rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-cyan);
+        }
+
+        .copyright {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+
+        /* AI Avatar */
+        #ai-avatar-container {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        #ai-avatar-canvas {
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+            border-radius: 50%;
+            border: 2px solid var(--accent-cyan);
+            box-shadow: 0 0 15px rgba(59, 201, 255, 0.3);
+            transition: transform 0.3s;
+        }
+
+        #ai-avatar-canvas:hover {
+            transform: scale(1.05);
+        }
+
+        .avatar-tooltip {
+            position: absolute;
+            bottom: 110px;
+            right: 0;
+            background: var(--bg-card);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            padding: 1rem 1.5rem;
+            max-width: 280px;
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(10px);
+            transition: all 0.3s;
+            box-shadow: var(--shadow-card);
+        }
+
+        .avatar-tooltip.visible {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+
+        .avatar-tooltip p {
+            font-size: 0.9rem;
+            margin-bottom: 0.8rem;
+            color: var(--text-primary);
+        }
+
+        .avatar-tooltip button {
+            padding: 0.6rem 1.2rem;
+            background: var(--accent-pink);
+            border: none;
+            border-radius: 6px;
+            color: white;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 600;
+            width: 100%;
+        }
+
+        /* Notification */
+        .notification-toast {
+            position: fixed;
+            bottom: 2rem;
+            left: 2rem;
+            background: var(--bg-card);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            padding: 1rem 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            z-index: 9998;
+            transform: translateX(-120%);
+            transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            box-shadow: var(--shadow-card);
+            max-width: 350px;
+        }
+
+        .notification-toast.visible {
+            transform: translateX(0);
+        }
+
+        .notification-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--btn-gradient);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: white;
+            flex-shrink: 0;
+        }
+
+        .notification-content h4 {
+            font-size: 0.9rem;
+            color: var(--text-primary);
+        }
+
+        .notification-content p {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(11, 11, 15, 0.95);
+                padding: 2rem;
+                flex-direction: column;
+                gap: 1.5rem;
+                border-bottom: 1px solid var(--glass-border);
+            }
+
+            nav.mobile-open {
+                display: flex;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero-content {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .timer-banner {
+                flex-direction: column;
+                gap: 0.2rem;
+                font-size: 0.8rem;
+                padding: 0.5rem;
+            }
+
+            #ai-avatar-container {
+                bottom: 1rem;
+                right: 1rem;
+            }
+
+            #ai-avatar-canvas {
+                width: 60px;
+                height: 60px;
+            }
+
+            .avatar-tooltip {
+                bottom: 70px;
+                right: 0;
+                max-width: 200px;
+            }
+
+            .notification-toast {
+                left: 1rem;
+                right: 1rem;
+                bottom: 1rem;
+                max-width: calc(100% - 2rem);
+            }
+
+            .portfolio-wrapper {
+                aspect-ratio: 4/3;
+            }
+            
+            .hotspot {
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .floating-icon {
+            position: absolute;
+            opacity: 0.1;
+            pointer-events: none;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Чумак К.В.</div>
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Открыть меню">☰</button>
+        <nav id="main-nav">
+            <a href="#problems">Проблемы</a>
+            <a href="#services">Услуги</a>
+            <a href="#portfolio">Портфолио</a>
+            <a href="#process">Процесс</a>
+            <a href="#reviews">Отзывы</a>
+            <a href="#contact">Контакты</a>
+            <a href="#contact" class="nav-cta">Заказать звонок</a>
+        </nav>
+    </header>
+
+    <!-- Timer Banner -->
+    <div class="timer-banner" style="margin-top: 70px;">
+        🔥 Бесплатный аудит сайта при заказе до <span id="promo-date">30.04.2026</span> 
+        <span style="opacity: 0.7">|</span> 
+        Осталось: <span id="countdown">--д --:--:--</span>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-bg"></div>
+        <canvas id="hero-canvas"></canvas>
+        <div class="hero-content">
+            <div class="hero-badge">🚀 Веб-разработчик для бизнеса</div>
+            <h1>Создаю сайты, которые продают онлайн и офлайн</h1>
+            <p class="hero-subtitle">Разработка сайтов для бизнеса — от визитки до интернет-магазина. Сроки в договоре, гарантия, современные технологии.</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary">
+                    Рассчитать проект
+                    <span>Ответ за 2 часа</span>
+                </a>
+                <a href="#portfolio" class="btn btn-secondary">
+                    Портфолио
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problems Section -->
+    <section id="problems">
+        <div class="container">
+            <h2 class="section-title fade-in">С какими запросами приходят ко мне</h2>
+            <div class="problems-grid">
+                <div class="card problem-card fade-in">
+                    <h3>Старый сайт не приносит заявки</h3>
+                    <p class="problem-solution">Решение: Аудит + редизайн с фокусом на конверсию</p>
+                    <p class="problem-text">Анализируем текущие проблемы, обновляем дизайн и структуру. Результат: +40-80% к заявкам.</p>
+                </div>
+                <div class="card problem-card fade-in">
+                    <h3>Разработчик пропал после предоплаты</h3>
+                    <p class="problem-solution">Решение: Поэтапная оплата, договор, Telegram-чат</p>
+                    <p class="problem-text">Фиксированные сроки в договоре, оплата по этапам, постоянная связь.</p>
+                </div>
+                <div class="card problem-card fade-in">
+                    <h3>Боюсь, что будет сложно управлять</h3>
+                    <p class="problem-solution">Решение: Админка с интуитивным интерфейсом</p>
+                    <p class="problem-text">Обучение работе с сайтом, видеоинструкции, 1 месяц поддержки бесплатно.</p>
+                </div>
+            </div>
+            <div class="card anti-sales fade-in">
+                <h3>❌ Не беру проекты:</h3>
+                <ul>
+                    <li>С бюджетом меньше 50 000 ₽</li>
+                    <li>Одностраничники за 1 день — это не мой подход</li>
+                    <li>Если клиент не готов давать обратную связь</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title fade-in">Услуги и цены</h2>
+            <div class="toggles-panel fade-in">
+                <button class="toggle-btn active" data-filter="online" onclick="filterServices('online')">⚪ Онлайн-бизнес</button>
+                <button class="toggle-btn" data-filter="offline" onclick="filterServices('offline')">⚪ Офлайн-бизнес</button>
+                <button class="toggle-btn" data-filter="support" onclick="filterServices('support')">⚪ Техподдержка</button>
+            </div>
+            <div class="services-grid">
+                <div class="card service-card fade-in" data-category="online">
+                    <h3>Интернет-магазин под ключ</h3>
+                    <ul>
+                        <li>Корзина и оформление заказа</li>
+                        <li>Интеграция с платежными системами</li>
+                        <li>Личный кабинет</li>
+                        <li>CRM интеграция</li>
+                    </ul>
+                    <p class="service-price">от 120 000 ₽</p>
+                    <p class="service-time">Срок: 14-21 день</p>
+                </div>
+                <div class="card service-card fade-in" data-category="online">
+                    <h3>Онлайн-сервис / SaaS</h3>
+                    <ul>
+                        <li>React / Vue frontend</li>
+                        <li>Node.js / Python backend</li>
+                        <li>API интеграции</li>
+                        <li>Масштабируемая архитектура</li>
+                    </ul>
+                    <p class="service-price">от 200 000 ₽</p>
+                    <p class="service-time">Срок: 30-60 дней</p>
+                </div>
+                <div class="card service-card fade-in" data-category="offline">
+                    <h3>Сайт-визитка для офлайн-бизнеса</h3>
+                    <ul>
+                        <li>Адаптивный дизайн</li>
+                        <li>Формы заявок</li>
+                        <li>Карта проезда</li>
+                        <li>WhatsApp-кнопка</li>
+                    </ul>
+                    <p class="service-price">от 50 000 ₽</p>
+                    <p class="service-time">Срок: 7-10 дней</p>
+                </div>
+                <div class="card service-card fade-in" data-category="offline">
+                    <h3>Сайт для кафе / ресторана</h3>
+                    <ul>
+                        <li>Меню онлайн</li>
+                        <li>Система бронирования</li>
+                        <li>Галерея фото</li>
+                        <li>SEO оптимизация</li>
+                    </ul>
+                    <p class="service-price">от 70 000 ₽</p>
+                    <p class="service-time">Срок: 10-14 дней</p>
+                </div>
+                <div class="card service-card fade-in" data-category="support">
+                    <h3>Техническая поддержка</h3>
+                    <ul>
+                        <li>Обновления и безопасность</li>
+                        <li>Мониторинг 24/7</li>
+                        <li>Доработки и улучшения</li>
+                        <li>Резервное копирование</li>
+                    </ul>
+                    <p class="service-price">от 15 000 ₽/мес</p>
+                    <p class="service-time">Ежемесячно</p>
+                </div>
+                <div class="card service-card fade-in" data-category="support">
+                    <h3>Редизайн и доработки</h3>
+                    <ul>
+                        <li>Аудит текущего сайта</li>
+                        <li>Обновление дизайна</li>
+                        <li>Исправление ошибок</li>
+                        <li>Оптимизация скорости</li>
+                    </ul>
+                    <p class="service-price">от 30 000 ₽</p>
+                    <p class="service-time">Срок: 5-14 дней</p>
+                </div>
+            </div>
+
+            <!-- Calculator -->
+            <div class="calculator-container fade-in">
+                <h3 class="section-title" style="font-size: 1.8rem; margin-bottom: 2rem;">🧮 Калькулятор стоимости</h3>
+                <div class="calc-grid">
+                    <div class="calc-group">
+                        <label for="calc-type">Тип сайта</label>
+                        <select id="calc-type" onchange="calculatePrice()">
+                            <option value="50000">Сайт-визитка (50 000 ₽)</option>
+                            <option value="70000">Сайт для кафе (70 000 ₽)</option>
+                            <option value="120000">Интернет-магазин (120 000 ₽)</option>
+                            <option value="200000">SaaS / Сервис (200 000 ₽)</option>
+                        </select>
+                    </div>
+                    <div class="calc-group">
+                        <label for="calc-pages">Количество страниц: <span id="pages-val">5</span></label>
+                        <input type="range" id="calc-pages" min="1" max="50" value="5" step="1" oninput="updatePagesVal(); calculatePrice();">
+                    </div>
+                    <div class="calc-group">
+                        <label>
+                            <input type="checkbox" id="calc-crm" onchange="calculatePrice()"> 
+                            Интеграция с CRM (+30 000 ₽)
+                        </label>
+                        <br>
+                        <label style="margin-top: 0.5rem;">
+                            <input type="checkbox" id="calc-seo" onchange="calculatePrice()"> 
+                            SEO оптимизация (+15 000 ₽)
+                        </label>
+                    </div>
+                </div>
+                <div class="calc-result">
+                    <p style="color: var(--text-secondary); margin-bottom: 0.5rem;">Примерная стоимость:</p>
+                    <div class="calc-price" id="calc-price">от 50 000 ₽</div>
+                    <p class="calc-details">Точная цена после обсуждения задач</p>
+                </div>
+                <!-- Upsell -->
+                <div class="upsell-card">
+                    <div class="upsell-text">
+                        <h4>💡 Часто заказывают вместе</h4>
+                        <p>Сайт + техподдержка на 3 месяца = скидка 15%</p>
+                    </div>
+                    <span class="upsell-badge">-15%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <div class="container">
+            <h2 class="section-title fade-in">Реальные проекты — в движении</h2>
+            <div class="portfolio-wrapper fade-in" id="portfolio-wrapper">
+                <video class="portfolio-video" autoplay loop muted playsinline poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Crect fill='%23111' width='1600' height='900'/%3E%3Ctext fill='%23333' font-family='sans-serif' font-size='40' dy='10.5' font-weight='bold' x='50%25' y='50%25' text-anchor='middle'%3EВидео-презентация проектов%3C/text%3E%3C/svg%3E">
+                    <source src="portfolio-demo.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                </video>
+                
+                <div class="hotspot-container">
+                    <div class="hotspot" style="top: 30%; left: 25%;" data-project="cafe" onclick="showHotspotInfo('cafe', event)" title="Сайт кафе"></div>
+                    <div class="hotspot" style="top: 55%; left: 65%;" data-project="shop" onclick="showHotspotInfo('shop', event)" title="Интернет-магазин"></div>
+                    <div class="hotspot" style="top: 75%; left: 40%;" data-project="clinic" onclick="showHotspotInfo('clinic', event)" title="Клиника"></div>
+                </div>
+
+                <div class="hotspot-info" id="hotspot-cafe" style="top: 25%; left: 15%;">
+                    <h4>Сайт кафе «Вкусно»</h4>
+                    <p style="color: var(--accent-cyan); font-weight: 600;">+40% бронирований</p>
+                    <p>Адаптивный дизайн, онлайн-меню, система бронирования. Верстка за 5 дней.</p>
+                    <a href="#" target="_blank">Посмотреть кейс →</a>
+                </div>
+                <div class="hotspot-info" id="hotspot-shop" style="top: 40%; left: 55%;">
+                    <h4>Интернет-магазин «TechStore»</h4>
+                    <p style="color: var(--accent-cyan); font-weight: 600;">Конверсия 4.2%</p>
+                    <p>React frontend, интеграция с CRM, онлайн-оплата. Средний чек +35%.</p>
+                    <a href="#" target="_blank">Посмотреть кейс →</a>
+                </div>
+                <div class="hotspot-info" id="hotspot-clinic" style="top: 60%; left: 30%;">
+                    <h4>Сайт клиники «Здоровье»</h4>
+                    <p style="color: var(--accent-cyan); font-weight: 600;">+60% записей</p>
+                    <p>Онлайн-запись, личный кабинет, SEO оптимизация.</p>
+                    <a href="#" target="_blank">Посмотреть кейс →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process">
+        <div class="container">
+            <h2 class="section-title fade-in">Как мы создаём сайт</h2>
+            <div class="stats-bar fade-in">
+                <div class="stat-item">
+                    <div class="stat-number" id="active-projects">7</div>
+                    <div class="stat-label">Активных проектов</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="shipped-today">2</div>
+                    <div class="stat-label">Отправлено сегодня</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="slots-left">3</div>
+                    <div class="stat-label">Свободных слотов</div>
+                </div>
+            </div>
+            <div class="process-steps">
+                <div class="card step-card fade-in" onclick="toggleStep(this)">
+                    <div class="step-number">01</div>
+                    <h3>Бриф</h3>
+                    <div class="step-details">
+                        <p>Обсуждаем ваши цели, целевую аудиторию, конкурентов. Заполняем подробный бриф для понимания задачи.</p>
+                    </div>
+                </div>
+                <div class="card step-card fade-in" onclick="toggleStep(this)">
+                    <div class="step-number">02</div>
+                    <h3>Прототип</h3>
+                    <div class="step-details">
+                        <p>Создаём wireframes и прототип в Figma. Утверждаем структуру и логику сайта до начала разработки.</p>
+                    </div>
+                </div>
+                <div class="card step-card fade-in" onclick="toggleStep(this)">
+                    <div class="step-number">03</div>
+                    <h3>Дизайн + разработка</h3>
+                    <div class="step-details">
+                        <p>Разрабатываем уникальный дизайн, верстаем, программируем. Регулярные демо для согласования.</p>
+                    </div>
+                </div>
+                <div class="card step-card fade-in" onclick="toggleStep(this)">
+                    <div class="step-number">04</div>
+                    <h3>Запуск</h3>
+                    <div class="step-details">
+                        <p>Тестирование, оптимизация, размещение на хостинге. Обучаем работе с сайтом, передаём документацию.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews">
+        <div class="container">
+            <h2 class="section-title fade-in">Что говорят клиенты</h2>
+            <div class="reviews-grid">
+                <div class="card review-card fade-in">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">«Кирилл сделал отличный интернет-магазин. Всё чётко по срокам, сайт работает быстро, продажи выросли на 50% за первый месяц.»</p>
+                    <p class="review-author">— Алексей, владелец TechStore</p>
+                </div>
+                <div class="card review-card fade-in">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">«Наконец-то разработчик, который не пропал! Постоянно был на связи, всё объяснял. Рекомендую для любого бизнеса.»</p>
+                    <p class="review-author">— Мария, директор салона красоты</p>
+                </div>
+                <div class="card review-card fade-in">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">«Сделали MVP для стартапа за 3 недели. Быстро, качественно, без лишней воды. Продолжаем работать над масштабированием.»</p>
+                    <p class="review-author">— Дмитрий, основатель стартапа</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <div class="container">
+            <h2 class="section-title fade-in">Часто задаваемые вопросы</h2>
+            <div class="faq-container">
+                <div class="faq-item fade-in">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Сколько стоит сайт?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Вилка цен: сайт-визитка от 50 000 ₽, интернет-магазин от 120 000 ₽, онлайн-сервис от 200 000 ₽. Точная стоимость зависит от сложности и функционала.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Какие гарантии?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Договор с фиксацией сроков и стоимости. Поэтапная оплата. 1 месяц поддержки после запуска бесплатно. Если не уложимся в срок — скидка 10%.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Как долго длится разработка?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Сайт-визитка: 7-10 дней. Интернет-магазин: 14-21 день. Онлайн-сервис: 30-60 дней. Сроки фиксируются в договоре.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Можно ли заказать доработку существующего сайта?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, провожу аудит текущего сайта и предлагаю план улучшений. Стоимость от 30 000 ₽ в зависимости от объёма работ.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Как происходит оплата?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Поэтапная оплата: 30% предоплата, 40% после утверждения дизайна, 30% после запуска. Принимаю перевод на карту, расчётный счёт, электронные деньги.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title fade-in">Обсудим ваш проект?</h2>
+            <div class="contact-grid">
+                <form id="contactForm" class="contact-form fade-in" onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" name="name" required placeholder="Иван Иванов">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Телефон или Telegram</label>
+                        <input type="text" id="phone" name="phone" required placeholder="+7 (999) 123-45-67 или @username">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Расскажите о проекте (необязательно)</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Тип сайта, бюджет, сроки..."></textarea>
+                    </div>
+                    <!-- Honeypot -->
+                    <div style="display:none;">
+                        <input type="text" id="honeypot" name="honeypot">
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Отправить заявку</button>
+                    <p style="color: var(--text-secondary); font-size: 0.8rem; margin-top: 1rem; text-align: center;">Отвечаю в течение 2 часов в рабочее время</p>
+                </form>
+                <div class="contact-info fade-in">
+                    <h3 style="font-size: 1.8rem; margin-bottom: 1.5rem; color: #fff;">Давайте создадим ваш проект вместе</h3>
+                    <ul class="contact-links">
+                        <li><a href="https://t.me/chumak_dev">📱 Telegram: @chumak_dev</a></li>
+                        <li><a href="https://wa.me/79001234567">💬 WhatsApp: +7 (900) 123-45-67</a></li>
+                        <li><a href="https://github.com/chumak-dev">🐙 GitHub</a></li>
+                        <li><a href="mailto:chumak@dev.ru">📧 chumak@dev.ru</a></li>
+                    </ul>
+                    <div class="guarantees">
+                        <h4>✅ Гарантии</h4>
+                        <ul>
+                            <li>Договор с фиксацией сроков</li>
+                            <li>Поэтапная оплата</li>
+                            <li>Поддержка 1 месяц бесплатно</li>
+                            <li>Исходный код передаётся клиенту</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="#services">Услуги</a>
+            <a href="#portfolio">Портфолио</a>
+            <a href="#contact">Контакты</a>
+            <a href="#faq">FAQ</a>
+            <a href="/privacy">Политика конфиденциальности</a>
+        </div>
+        <a href="#contact" class="btn btn-primary" style="display: inline-block; margin-bottom: 2rem;">Рассчитать проект</a>
+        <p class="copyright">© Чумак К.В. 2026. Все права защищены.</p>
+    </footer>
+
+    <!-- AI Avatar -->
+    <div id="ai-avatar-container">
+        <canvas id="ai-avatar-canvas"></canvas>
+        <div class="avatar-tooltip" id="avatar-tooltip">
+            <p>Нужен расчёт под ваш бюджет?</p>
+            <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Написать мне</button>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div class="notification-toast" id="notification">
+        <div class="notification-avatar">И</div>
+        <div class="notification-content">
+            <h4 id="notif-name">Иванов И.</h4>
+            <p id="notif-action">только что заказал интернет-магазин</p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // === THREE.JS HERO SCENE ===
+        const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        
+        function initHeroScene() {
+            if (isMobile || !window.innerWidth) return;
+            
+            const canvas = document.getElementById('hero-canvas');
+            if (!canvas) return;
+            
+            const scene = new THREE.Scene();
+            const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+            const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+            
+            const geometries = [];
+            const materialPink = new THREE.MeshPhongMaterial({ color: 0xFF3B7C, transparent: true, opacity: 0.5 });
+            const materialCyan = new THREE.MeshPhongMaterial({ color: 0x3BC9FF, transparent: true, opacity: 0.5 });
+            const materialMixed = new THREE.MeshPhongMaterial({ color: 0x7b2cff, transparent: true, opacity: 0.4 });
+            
+            for (let i = 0; i < 15; i++) {
+                let geometry, material;
+                const rand = Math.random();
+                if (rand < 0.33) {
+                    geometry = new THREE.BoxGeometry(0.5 + Math.random(), 0.5 + Math.random(), 0.5 + Math.random());
+                    material = materialPink.clone();
+                } else if (rand < 0.66) {
+                    geometry = new THREE.SphereGeometry(0.3 + Math.random() * 0.5, 32, 32);
+                    material = materialCyan.clone();
+                } else {
+                    geometry = new THREE.TorusGeometry(0.3 + Math.random() * 0.4, 0.1 + Math.random() * 0.2, 16, 32);
+                    material = materialMixed.clone();
+                }
+                
+                const mesh = new THREE.Mesh(geometry, material);
+                mesh.position.set((Math.random() - 0.5) * 15, (Math.random() - 0.5) * 15, (Math.random() - 0.5) * 10 - 5);
+                mesh.rotation.set(Math.random() * Math.PI, Math.random() * Math.PI, 0);
+                mesh.userData = {
+                    rotSpeed: { x: (Math.random() - 0.5) * 0.01, y: (Math.random() - 0.5) * 0.01 },
+                    floatOffset: Math.random() * Math.PI * 2
+                };
+                scene.add(mesh);
+                geometries.push(mesh);
+            }
+            
+            const light = new THREE.DirectionalLight(0xffffff, 0.8);
+            light.position.set(5, 5, 5);
+            scene.add(light);
+            scene.add(new THREE.AmbientLight(0x404040));
+            
+            camera.position.z = 8;
+            
+            let mouseX = 0, mouseY = 0;
+            document.addEventListener('mousemove', (e) => {
+                mouseX = (e.clientX / window.innerWidth - 0.5) * 2;
+                mouseY = (e.clientY / window.innerHeight - 0.5) * 2;
+            });
+            
+            function animate() {
+                requestAnimationFrame(animate);
+                const time = Date.now() * 0.001;
+                
+                geometries.forEach(mesh => {
+                    mesh.rotation.x += mesh.userData.rotSpeed.x;
+                    mesh.rotation.y += mesh.userData.rotSpeed.y;
+                    mesh.position.y += Math.sin(time * 1.5 + mesh.userData.floatOffset) * 0.001;
+                    mesh.position.x += (mouseX * 0.3 - mesh.position.x) * 0.01;
+                    mesh.position.y += (-mouseY * 0.3 - mesh.position.y) * 0.01;
+                });
+                
+                camera.rotation.x += (mouseY * 0.1 - camera.rotation.x) * 0.02;
+                camera.rotation.y += (mouseX * 0.1 - camera.rotation.y) * 0.02;
+                
+                renderer.render(scene, camera);
+            }
+            animate();
+            
+            window.addEventListener('resize', () => {
+                if (window.innerWidth < 768) {
+                    renderer.setSize(0, 0);
+                    return;
+                }
+                camera.aspect = window.innerWidth / window.innerHeight;
+                camera.updateProjectionMatrix();
+                renderer.setSize(window.innerWidth, window.innerHeight);
+            });
+
+            // Parallax with Scroll
+            if (gsap && gsap.plugins && gsap.plugins.ScrollTrigger) {
+                gsap.to('#hero-canvas', {
+                    y: window.innerHeight * 0.2,
+                    ease: 'none',
+                    scrollTrigger: {
+                        trigger: '#hero',
+                        start: 'top top',
+                        end: 'bottom top',
+                        scrub: 1
+                    }
+                });
+            }
+        }
+        
+        window.addEventListener('DOMContentLoaded', initHeroScene);
+
+        // === GSAP ANIMATIONS ===
+        window.addEventListener('load', () => {
+            if (gsap && gsap.plugins && gsap.plugins.ScrollTrigger) {
+                gsap.registerPlugin(ScrollTrigger);
+                
+                gsap.utils.toArray('.fade-in').forEach((el, i) => {
+                    gsap.fromTo(el, 
+                        { opacity: 0, y: 30 },
+                        {
+                            opacity: 1, y: 0,
+                            duration: 0.6,
+                            ease: 'power2.out',
+                            scrollTrigger: {
+                                trigger: el,
+                                start: 'top 85%',
+                                toggleActions: 'play none none none'
+                            },
+                            delay: i % 3 * 0.1
+                        }
+                    );
+                });
+            }
+        });
+
+        // === SERVICE FILTER ===
+        function filterServices(filter) {
+            localStorage.setItem('serviceFilter', filter);
+            document.querySelectorAll('.toggle-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.filter === filter);
+            });
+            document.querySelectorAll('.service-card').forEach(card => {
+                if (filter === 'all' || card.dataset.category === filter) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        }
+        
+        (function() {
+            const saved = localStorage.getItem('serviceFilter');
+            if (saved) filterServices(saved);
+        })();
+
+        // === CALCULATOR ===
+        function updatePagesVal() {
+            document.getElementById('pages-val').textContent = document.getElementById('calc-pages').value;
+        }
+        
+        function calculatePrice() {
+            const base = parseInt(document.getElementById('calc-type').value);
+            const pages = parseInt(document.getElementById('calc-pages').value);
+            const hasCRM = document.getElementById('calc-crm').checked;
+            const hasSEO = document.getElementById('calc-seo').checked;
+            
+            let price = base;
+            price += Math.max(0, pages - 5) * 5000;
+            if (hasCRM) price += 30000;
+            if (hasSEO) price += 15000;
+            
+            const formatter = new Intl.NumberFormat('ru-RU');
+            document.getElementById('calc-price').textContent = `от ${formatter.format(price)} ₽`;
+        }
+
+        // === PORTFOLIO HOTSPOTS ===
+        let hotspotTimeout;
+        function showHotspotInfo(project, e) {
+            e.stopPropagation();
+            document.querySelectorAll('.hotspot-info').forEach(info => info.classList.remove('visible'));
+            const info = document.getElementById('hotspot-' + project);
+            if (info) {
+                info.classList.add('visible');
+                clearTimeout(hotspotTimeout);
+                hotspotTimeout = setTimeout(() => info.classList.remove('visible'), 5000);
+            }
+        }
+
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.hotspot-container')) {
+                document.querySelectorAll('.hotspot-info').forEach(i => i.classList.remove('visible'));
+            }
+        });
+
+        // === PROCESS STEPS & FAQ ===
+        function toggleStep(el) {
+            el.classList.toggle('expanded');
+        }
+
+        function toggleFaq(el) {
+            const item = el.parentElement;
+            const isOpen = item.classList.contains('expanded');
+            document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('expanded'));
+            if (!isOpen) {
+                item.classList.add('expanded');
+                el.querySelector('span:last-child').textContent = '−';
+            }
+        }
+        
+        document.querySelectorAll('.faq-question span:last-child').forEach(span => span.textContent = '+');
+
+        // === LIVE STATS (JSON Fetch) ===
+        async function updateLiveStats() {
+            try {
+                // Замените на реальный API эндпоинт
+                // const response = await fetch('/api/stats.json');
+                // const data = await response.json();
+                const mockData = {
+                    active: Math.floor(5 + Math.random() * 5),
+                    shipped: Math.floor(1 + Math.random() * 4),
+                    slots: Math.floor(1 + Math.random() * 4)
+                };
+                document.getElementById('active-projects').textContent = mockData.active;
+                document.getElementById('shipped-today').textContent = mockData.shipped;
+                document.getElementById('slots-left').textContent = mockData.slots;
+            } catch (e) {
+                console.log('Stats update failed', e);
+            }
+        }
+        setInterval(updateLiveStats, 30000);
+        updateLiveStats();
+
+        // === COUNTDOWN ===
+        (function() {
+            const endDate = new Date('2026-04-30T23:59:59');
+            function updateCountdown() {
+                const now = new Date();
+                const diff = endDate - now;
+                if (diff <= 0) {
+                    document.getElementById('countdown').textContent = 'Акция завершена';
+                    return;
+                }
+                const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+                const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toString().padStart(2, '0');
+                const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60)).toString().padStart(2, '0');
+                const s = Math.floor((diff % (1000 * 60)) / 1000).toString().padStart(2, '0');
+                document.getElementById('countdown').textContent = `${d}д ${h}:${m}:${s}`;
+            }
+            updateCountdown();
+            setInterval(updateCountdown, 1000);
+        })();
+
+        // === FORM SUBMISSION TO TELEGRAM ===
+        async function handleSubmit(e) {
+            e.preventDefault();
+            const form = e.target;
+            const btn = form.querySelector('button[type="submit"]');
+            const honeypot = form.querySelector('#honeypot').value;
+            
+            if (honeypot) return;
+            
+            btn.textContent = 'Отправка...';
+            btn.disabled = true;
+            
+            const name = form.name.value;
+            const phone = form.phone.value;
+            const message = form.message.value;
+            
+            const text = `🚀 Новая заявка с сайта!\n\n👤 Имя: ${name}\n📱 Контакт: ${phone}\n📝 Сообщение: ${message || 'Нет сообщения'}`;
+            
+            try {
+                // ЗАМЕНИТЕ НА РЕАЛЬНЫЕ ДАННЫЕ
+                const BOT_TOKEN = 'YOUR_BOT_TOKEN_HERE';
+                const CHAT_ID = 'YOUR_CHAT_ID_HERE';
+                const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
+                
+                await fetch(url, {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({ chat_id: CHAT_ID, text: text, parse_mode: 'HTML' })
+                });
+                
+                btn.textContent = '✓ Заявка отправлена!';
+                btn.style.background = 'var(--accent-success)';
+                btn.style.color = '#000';
+                
+                setTimeout(() => {
+                    btn.textContent = 'Отправить заявку';
+                    btn.style.background = '';
+                    btn.style.color = '';
+                    btn.disabled = false;
+                    form.reset();
+                }, 3000);
+            } catch (err) {
+                console.error('Send error', err);
+                btn.textContent = 'Ошибка отправки';
+                setTimeout(() => {
+                    btn.textContent = 'Отправить заявку';
+                    btn.disabled = false;
+                }, 2000);
+            }
+        }
+
+        // === AI AVATAR & TOOLTIPS ===
+        function initAvatar() {
+            const canvas = document.getElementById('ai-avatar-canvas');
+            if (isMobile) {
+                canvas.style.display = 'none';
+                return;
+            }
+            
+            const scene = new THREE.Scene();
+            const camera = new THREE.PerspectiveCamera(50, 1, 0.1, 100);
+            const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
+            renderer.setSize(100, 100);
+            
+            const group = new THREE.Group();
+            const head = new THREE.Mesh(new THREE.SphereGeometry(0.8, 32, 32), new THREE.MeshPhongMaterial({ 
+                color: 0x3BC9FF, emissive: 0x3BC9FF, emissiveIntensity: 0.4, transparent: true, opacity: 0.8 
+            }));
+            group.add(head);
+            
+            const eyeMat = new THREE.MeshPhongMaterial({ color: 0xFF3B7C, emissive: 0xFF3B7C, emissiveIntensity: 0.6 });
+            const leftEye = new THREE.Mesh(new THREE.SphereGeometry(0.15, 16, 16), eyeMat);
+            leftEye.position.set(-0.25, 0.1, 0.7);
+            group.add(leftEye);
+            
+            const rightEye = new THREE.Mesh(new THREE.SphereGeometry(0.15, 16, 16), eyeMat);
+            rightEye.position.set(0.25, 0.1, 0.7);
+            group.add(rightEye);
+            
+            scene.add(group);
+            scene.add(new THREE.DirectionalLight(0xffffff, 1));
+            scene.add(new THREE.AmbientLight(0x404040));
+            camera.position.z = 2.5;
+            
+            let mx = 0, my = 0;
+            document.addEventListener('mousemove', e => {
+                mx = (e.clientX / window.innerWidth - 0.5) * 2;
+                my = (e.clientY / window.innerHeight - 0.5) * 2;
+            });
+            
+            let blinkState = false;
+            setInterval(() => {
+                blinkState = !blinkState;
+                leftEye.scale.y = blinkState ? 0.1 : 1;
+                rightEye.scale.y = blinkState ? 0.1 : 1;
+            }, 3000);
+            
+            function animate() {
+                requestAnimationFrame(animate);
+                group.rotation.y += (mx * 0.5 - group.rotation.y) * 0.05;
+                group.rotation.x += (-my * 0.3 - group.rotation.x) * 0.05;
+                renderer.render(scene, camera);
+            }
+            animate();
+
+            canvas.addEventListener('click', () => {
+                document.getElementById('contact').scrollIntoView({behavior: 'smooth'});
+            });
+        }
+
+        // Avatar Tooltips
+        (function() {
+            const tooltip = document.getElementById('avatar-tooltip');
+            let shown = false;
+            setTimeout(() => {
+                if (!shown) {
+                    tooltip.classList.add('visible');
+                    shown = true;
+                    setTimeout(() => tooltip.classList.remove('visible'), 8000);
+                }
+            }, 15000);
+
+            document.addEventListener('mouseleave', e => {
+                if (e.clientY < 10) {
+                    tooltip.innerHTML = '<p>Уже уходите? Заберите чек-лист "ТОП-5 ошибок в сайтах" бесплатно!</p><button onclick="document.getElementById(\'contact\').scrollIntoView({behavior: \'smooth\'})">Получить чек-лист</button>';
+                    tooltip.classList.add('visible');
+                    setTimeout(() => tooltip.classList.remove('visible'), 10000);
+                }
+            });
+        })();
+        
+        initAvatar();
+
+        // === NOTIFICATIONS ===
+        (function() {
+            const names = ['Иванов И.', 'Петрова А.', 'Сидоров К.'];
+            const actions = ['заказал интернет-магазин', 'заказал сайт-визитку', 'оставил заявку'];
+            const toast = document.getElementById('notification');
+            
+            function show() {
+                const idx = Math.floor(Math.random() * names.length);
+                document.getElementById('notif-name').textContent = names[idx];
+                document.getElementById('notif-action').textContent = 'только что ' + actions[Math.floor(Math.random() * actions.length)];
+                toast.classList.add('visible');
+                setTimeout(() => toast.classList.remove('visible'), 5000);
+            }
+            setTimeout(show, 20000);
+            setInterval(show, 45000);
+        })();
+
+        // === MOBILE MENU ===
+        function toggleMobileMenu() {
+            document.getElementById('main-nav').classList.toggle('mobile-open');
+        }
+        document.querySelectorAll('#main-nav a').forEach(a => {
+            a.addEventListener('click', () => document.getElementById('main-nav').classList.remove('mobile-open'));
+        });
+    </script>
+</body>
+</html>
